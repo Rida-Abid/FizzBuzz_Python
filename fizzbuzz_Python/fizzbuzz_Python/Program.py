@@ -1,5 +1,4 @@
-import sys
-from math import cos, radians
+from Logic import logic
 
 class Program:
 
@@ -7,10 +6,10 @@ class Program:
     
     #if input!=3:
     # print("Enter 3 values")
-
-    result = []
     
+    results = logic.process(self, fizzId, buzzId, maxCount )
+    for result in results:
     
-        
+      print (result)   
 
     

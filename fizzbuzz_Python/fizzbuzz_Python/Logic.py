@@ -1,21 +1,20 @@
-import sys
-from math import cos, radians
-
-class logic:
+class logic: 
+    def calculation(self, i, fizzId, buzzId):
+         if (i % fizzId == 0) and (i % buzzId == 0):
+            return "fizzbuzz"
+         elif (i % fizzId == 0):
+            return "fizz"
+         elif (i % buzzId == 0):
+            return "buzz"
+         else: 
+            return str(i)
  
- 
- for x in range(maxCount):
+    def process(self, fizzId, buzzId, maxCount):
+        result = []
+        for i in range(maxCount):
     
-        result.Append(calculation(x,fizzId,buzzId)
-        
+            result.append(self.calculation(i, fizzId, buzzId))
+          
+        return result
 
-    def calculation(x,fizzId,buzzId):
-
-        if (value% fizzId == 0) and (value% buzzId == 0):
-        return fizzbuzz
-
-        elif (value% fizzId == 0):
-        return fizz
-
-        else (value% buzzId == 0):
-        return buzz
+   
