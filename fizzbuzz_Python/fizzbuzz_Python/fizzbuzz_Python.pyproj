@@ -11,6 +11,14 @@
     <OutputPath>.</OutputPath>
     <Name>fizzbuzz_Python</Name>
     <RootNamespace>fizzbuzz_Python</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <Environment>
+    </Environment>
+    <InterpreterArguments>
+    </InterpreterArguments>
+    <CommandLineArguments>
+    </CommandLineArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
