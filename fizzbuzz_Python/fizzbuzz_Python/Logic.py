@@ -2,15 +2,8 @@ class logic:
     def process ( fizzId, buzzId, maxCount):
         result = []
         pros = logic()
-        if (maxCount < 1):
-            result.append("Please enter a maxCount of more than 0")
-            return result
-        if (fizzId < 1):
-            result.append("Please enter a fizzId of more than 0")
-            return result
-
-        if (buzzId < 1):
-            result.append("Please enter a buzzId of more than 0")
+        if (maxCount < 1) or (fizzId < 1) or (buzzId < 1):
+            result.append("Please enter all values greater than 0")
             return result
        
         for i in range(1, maxCount):
