@@ -13,5 +13,15 @@ class TestProgram(unittest.TestCase):
         self.assertEqual(result[4], "buzz")
         self.assertEqual(result[14], "fizzbuzz")
 
+    def  test_SameParameters(self):
+        result = logic.process(3, 3, 3)
+        self.assertIsNotNone(result)
+        self.assertEqual(len(result), 3)
+        self.assertEqual(result[0], "1")
+        self.assertEqual(result[2], "fizz")
+
+    
+       
+
 if __name__ == '__main__':
     unittest.main()
