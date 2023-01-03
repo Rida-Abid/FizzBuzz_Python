@@ -60,6 +60,12 @@ class TestProgram(unittest.TestCase):
         self.assertEqual(len(result), 1)
         self.assertEqual(result[0], "Please enter all values greater than 0")
 
+    def  test_fizzIdAsZero(self):
+        result = logic.process(0, 5, 50)
+        self.assertIsNotNone(result)
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0], "Please enter all values greater than 0")
+
     
 
     
