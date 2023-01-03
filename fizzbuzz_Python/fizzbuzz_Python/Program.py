@@ -1,19 +1,18 @@
 import sys
 from Logic import logic
 
-class Program:
-    
-    fizzId, buzzId, maxCount = map (int,input("Enter fizzId, buzzId, maxCount").split( ))
+def main():
+    args = sys.argv[1:]
 
-    #if args.count != 3:
-    #    print("Enter 3 values")
-    
-    #else:
-    results = logic.process( fizzId, buzzId, maxCount )
-    for result in results:
-    
-        print (result)
-        
-          
+    if len(args) != 3:
+        print("error: missing input values")
+        print("useage: enter fizzId, buzzId, maxCount")
+    else:
+        fizzId, buzzId, maxCount = args
+        results = logic.process(int(fizzId), int(buzzId), int(maxCount))
+        for result in results:
+            print (result)
+      
 
-    
+if __name__ == '__main__':
+    main()
