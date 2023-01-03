@@ -67,7 +67,13 @@ class TestProgram(unittest.TestCase):
         self.assertEqual(result[0], "Please enter all values greater than 0")
 
     def  test_buzzIdAsZero(self):
-        result = logic.process(0, 5, 50)
+        result = logic.process(3, 0, 50)
+        self.assertIsNotNone(result)
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0], "Please enter all values greater than 0")
+
+    def  test_maxCountAsZero(self):
+        result = logic.process(3, 5, 0)
         self.assertIsNotNone(result)
         self.assertEqual(len(result), 1)
         self.assertEqual(result[0], "Please enter all values greater than 0")
