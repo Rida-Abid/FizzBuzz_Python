@@ -18,7 +18,7 @@ class TestProgram(unittest.TestCase):
         self.assertIsNotNone(result)
         self.assertEqual(len(result), 3)
         self.assertEqual(result[0], "1")
-        self.assertEqual(result[2], "fizz")
+        self.assertEqual(result[2], "fizzbuzz")
 
     def  test_First2ParametersSame(self):
         result = logic.process(3, 3, 50)
@@ -26,6 +26,22 @@ class TestProgram(unittest.TestCase):
         self.assertEqual(len(result), 50)
         self.assertEqual(result[0], "1")
         self.assertEqual(result[2], "fizzbuzz")
+
+    def  test_Last2ParametersSame(self):
+        result = logic.process(3, 5, 5)
+        self.assertIsNotNone(result)
+        self.assertEqual(len(result), 5)
+        self.assertEqual(result[0], "1")
+        self.assertEqual(result[2], "fizz")
+        self.assertEqual(result[4], "buzz")
+
+    def  test_FirstandLastParametersSame(self):
+        result = logic.process(3, 5, 3)
+        self.assertIsNotNone(result)
+        self.assertEqual(len(result), 3)
+        self.assertEqual(result[0], "1")
+        self.assertEqual(result[2], "fizz")
+        
 
     
        
