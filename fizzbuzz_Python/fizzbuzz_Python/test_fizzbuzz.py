@@ -20,6 +20,13 @@ class TestProgram(unittest.TestCase):
         self.assertEqual(result[0], "1")
         self.assertEqual(result[2], "fizz")
 
+    def  test_First2ParametersSame(self):
+        result = logic.process(3, 3, 50)
+        self.assertIsNotNone(result)
+        self.assertEqual(len(result), 50)
+        self.assertEqual(result[0], "1")
+        self.assertEqual(result[2], "fizzbuzz")
+
     
        
 
