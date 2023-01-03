@@ -42,12 +42,19 @@ class TestProgram(unittest.TestCase):
         self.assertEqual(result[0], "1")
         self.assertEqual(result[2], "fizz")
 
-    def  test_fizzIdAsZero(self):
+    def  test_NegativefizzId(self):
         result = logic.process(-3, 5, 50)
         self.assertIsNotNone(result)
         self.assertEqual(len(result), 1)
         self.assertEqual(result[0], "Please enter all values greater than 0")
 
+    def  test_NegativebuzzId(self):
+        result = logic.process(3, -5, 50)
+        self.assertIsNotNone(result)
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0], "Please enter all values greater than 0")
+
+    
 
         
         
