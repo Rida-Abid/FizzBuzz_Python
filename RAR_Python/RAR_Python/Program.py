@@ -1,7 +1,8 @@
+import sys
 
 class Program:
     def main():
-        args = sys.args[1:]
+        args = sys.argv[1:]
 
         if (len(args) != 5):
             print ("error:enter 5 words")
@@ -10,3 +11,9 @@ class Program:
         else:
             list = []
             list = args
+            print(list)
+           
+
+
+    if __name__ == '__main__':
+        main()
