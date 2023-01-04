@@ -17,8 +17,9 @@ def main():
         objP = DisplayValues
          
     DisplayValues("Original List",Words)
-    DisplayValues("ReversedList",objL.ReversedList(Words))
-    DisplayValues("SortedList",objL.SortedList(Words))
+    DisplayValues("Reversed List",objL.ReversedList(Words))
+    DisplayValues("Sorted List",objL.SortedList(Words))
+    DisplayValues("Randomised List",objL.Randomise(Words))
 
 
 def  DisplayValues (heading, Words):
