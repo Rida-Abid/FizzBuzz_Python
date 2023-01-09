@@ -9,7 +9,7 @@ def main():
     args = sys.argv[1:]
         
     try:
-        if (len(args) < 1):
+        if (len(args) < 2):
             print ("error:Enter atleast 2 words")
             print ("usage:Please enter words")
              
