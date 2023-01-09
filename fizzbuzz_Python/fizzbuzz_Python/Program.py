@@ -17,7 +17,7 @@ def main():
     except ValueError:
         for a in args:
              if not (a.isdigit()) == True:
-                print("error:enter numbers ")
+                print("error:enter numbers only")
         else:
             print("")
 
