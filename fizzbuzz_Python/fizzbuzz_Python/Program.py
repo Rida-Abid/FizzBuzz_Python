@@ -18,8 +18,6 @@ def main():
         for a in args:
              if not (a.isdigit()) == True:
                 print("error:enter numbers only")
-        else:
-            print("")
 
 
 if __name__ == '__main__':
